@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VALSHES</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef0f9;
+            color: #3e3e3e;
+        }
+        header {
+            background-color: #f56b8a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #9b59b6;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #9b59b6;
+            color: white;
+            border-bottom-left-radius: 50% 30px;
+            border-bottom-right-radius: 50% 30px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f56b8a;
+            color: white;
+            font-size: 14px;
+        }
+        button {
+            padding: 12px 25px;
+            background-color: #f56b8a;
+            border: none;
+            color: white;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #9b59b6;
+        }
+        .price-section {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .price-box {
+            width: 45%;
+            margin: 10px 0;
+            border-radius: 15px;
+            background: linear-gradient(145deg, #f56b8a, #9b59b6);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .price-box img {
+            width: 80%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .price-box h3 {
+            margin-top: 10px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .price-box p {
+            color: white;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .price-box p span {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .price-box:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>VALSHES</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to VALSHES</h2>
+    <p>We help you achieve success with our amazing services.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Get Started</button>
+</section>
+
+<section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We are a professional business providing top-quality products and services. Our team is dedicated to delivering the best results for our clients. Join us and experience beauty like never before.</p>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Nails</li>
+        <li>Eyelashes</li>
+        <li>Spa</li>
+        <li>Training & Workshops</li>
+    </ul>
+</section>
+
+<section class="section" id="prices">
+    <h2>Nails & Eyelashes Prices</h2>
+    <div class="price-section">
+        <!-- Nails Prices -->
+        <div class="price-box">
+            <img src="nails.jpg" alt="Nails" />
+            <h3>Nails Prices</h3>
+            <p>Manicure: <span>$25</span></p>
+            <p>Pedicure: <span>$30</span></p>
+            <p>Gel Nails: <span>$40</span></p>
+        </div>
+
+        <!-- Eyelashes Prices -->
+        <div class="price-box">
+            <img src="eyelash1.jpg" alt="Eyelashes" />
+            <h3>Eyelashes Prices</h3>
+            <p>Classic Lashes: <span>$50</span></p>
+            <p>Volume Lashes: <span>$70</span></p>
+            <p>Hybrid Lashes: <span>$60</span></p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@mybusiness.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+</section>
+
+<footer>
+    &copy; 2025 VALSHES. All rights reserved.
+</footer>
+
+</body>
+</html>
